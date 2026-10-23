@@ -4,8 +4,8 @@ import json
 
 mcp=FastMCP("Simple Calculator")
 
-@mcp.tool
-def cal_per(a:int,b:int)->int:
+@mcp.tool()
+def cal_per(a:int,b:int)->float:
     """
         find a percentage of b.
         Args:
@@ -16,8 +16,8 @@ def cal_per(a:int,b:int)->int:
     """
     return a*b/100
 
-@mcp.tool
-def cal_ratio(a:int,b:int)->int:
+@mcp.tool()
+def cal_ratio(a:int,b:int)->float:
     """Calculate ratio of a and b 
        Args:
            a:first number
